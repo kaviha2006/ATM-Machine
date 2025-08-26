@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Withdraw</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="atm-container">
+    <h2>Withdraw Money</h2>
+
+    <!-- Show balance -->
+    <p id="currentBalance"></p>
+
+    <!-- Input for withdraw -->
+    <input type="number" id="withdrawAmount" placeholder="Enter Amount">
+
+    <!-- Withdraw button -->
+    <button onclick="withdraw()">Withdraw</button>
+
+    <!-- Transaction message -->
+    <p id="message"></p>
+
+    <!-- Back button -->
+    <button onclick="location.href='menu.html'">Back</button>
+  </div>
+
+  <script src="script.js"></script>
+  <script>
+    // Show balance when page loads
+    const acc = JSON.parse(localStorage.getItem("account"));
+    document.getElementById("currentBalance").innerText = `Your Balance: ₹${acc.balance}`;
+  </script>
+</body>
+</html>

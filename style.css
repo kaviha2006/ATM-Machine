@@ -1,0 +1,98 @@
+/* Overall Page */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #000000, #1a1a1a); /* Deep black gradient */
+  color: #f5f5f5;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ATM Box */
+.atm-container {
+  background-color: #111;  
+  border-radius: 12px;
+  padding: 30px 35px;
+  width: 340px;
+  text-align: center;
+  box-shadow: 0 0 20px rgba(255, 215, 0, 0.3); /* Soft gold glow */
+  border: 2px solid gold; /* Gold border */
+}
+
+/* Heading */
+.atm-container h2 {
+  margin-bottom: 15px;
+  font-size: 22px;
+  color: gold; /* Gold title */
+  font-weight: bold;
+}
+
+/* Paragraph */
+.atm-container p {
+  margin: 12px 0;
+  font-size: 16px;
+  color: #ddd;
+}
+
+/* Input Fields */
+.atm-container input[type="number"],
+.atm-container input[type="password"] {
+  width: calc(100% - 20px);
+  padding: 12px;
+  margin-bottom: 18px;
+  font-size: 16px;
+  border: 2px solid gold;
+  border-radius: 6px;
+  background: #1a1a1a;
+  color: #f5f5f5;
+  outline: none;
+  transition: 0.3s;
+}
+
+.atm-container input:focus {
+  border: 2px solid #ffd700;
+  box-shadow: 0 0 10px gold;
+}
+
+/* Buttons */
+.atm-container button {
+  width: 100%;
+  padding: 14px;
+  margin: 12px 0;
+  font-size: 16px;
+  font-weight: bold;
+  border: 2px solid gold;
+  border-radius: 6px;
+  cursor: pointer;
+  background-color: black;
+  color: gold;
+  transition: 0.3s ease-in-out;
+}
+
+.atm-container button:hover {
+  background-color: gold;
+  color: black;
+  box-shadow: 0 0 12px gold;
+}
+
+/* Exit Button (Red Accent) */
+.exit {
+  border-color: #ff4444 !important;
+  color: #ff4444 !important;
+}
+
+.exit:hover {
+  background-color: #ff4444 !important;
+  color: white !important;
+  box-shadow: 0 0 12px #ff4444;
+}
+
+/* Feedback Message */
+#message, #error, #currentBalance {
+  margin-top: 15px;
+  font-weight: bold;
+  color: gold; /* Gold feedback text */
+}
